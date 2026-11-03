@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="F.I.O kiriting..." id="user">
+    <button onclick="add()">Add</button>
+    <br>
+    <script>
+        let users = []
+        let i = 0
+        function add() {
+            let user = document.getElementById('user')
+            users.push(user.value)
+            document.body.innerHTML += (i+1)+"."+ users[i] + "<br>"
+            i++
+            user.value = ''
+        }
+
+
+    </script>
+</body>
+
+</html>
